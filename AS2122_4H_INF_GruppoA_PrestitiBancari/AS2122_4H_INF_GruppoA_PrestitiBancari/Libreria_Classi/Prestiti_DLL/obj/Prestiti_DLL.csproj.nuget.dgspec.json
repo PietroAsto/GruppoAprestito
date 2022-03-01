@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\filip\\Desktop\\C#\\AS2122_4H_INF_GruppoA_PrestitiBancari\\AS2122_4H_INF_GruppoA_PrestitiBancari\\Libreria_Classi\\Prestiti_DLL\\Prestiti_DLL.csproj": {}
+    "C:\\Users\\filip\\Desktop\\C#\\GruppoAprestito\\AS2122_4H_INF_GruppoA_PrestitiBancari\\AS2122_4H_INF_GruppoA_PrestitiBancari\\Libreria_Classi\\Prestiti_DLL\\Prestiti_DLL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\filip\\Desktop\\C#\\AS2122_4H_INF_GruppoA_PrestitiBancari\\AS2122_4H_INF_GruppoA_PrestitiBancari\\Libreria_Classi\\Prestiti_DLL\\Prestiti_DLL.csproj": {
+    "C:\\Users\\filip\\Desktop\\C#\\GruppoAprestito\\AS2122_4H_INF_GruppoA_PrestitiBancari\\AS2122_4H_INF_GruppoA_PrestitiBancari\\Libreria_Classi\\Prestiti_DLL\\Prestiti_DLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\filip\\Desktop\\C#\\AS2122_4H_INF_GruppoA_PrestitiBancari\\AS2122_4H_INF_GruppoA_PrestitiBancari\\Libreria_Classi\\Prestiti_DLL\\Prestiti_DLL.csproj",
+        "projectUniqueName": "C:\\Users\\filip\\Desktop\\C#\\GruppoAprestito\\AS2122_4H_INF_GruppoA_PrestitiBancari\\AS2122_4H_INF_GruppoA_PrestitiBancari\\Libreria_Classi\\Prestiti_DLL\\Prestiti_DLL.csproj",
         "projectName": "Prestiti_DLL",
-        "projectPath": "C:\\Users\\filip\\Desktop\\C#\\AS2122_4H_INF_GruppoA_PrestitiBancari\\AS2122_4H_INF_GruppoA_PrestitiBancari\\Libreria_Classi\\Prestiti_DLL\\Prestiti_DLL.csproj",
+        "projectPath": "C:\\Users\\filip\\Desktop\\C#\\GruppoAprestito\\AS2122_4H_INF_GruppoA_PrestitiBancari\\AS2122_4H_INF_GruppoA_PrestitiBancari\\Libreria_Classi\\Prestiti_DLL\\Prestiti_DLL.csproj",
         "packagesPath": "C:\\Users\\filip\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\filip\\Desktop\\C#\\AS2122_4H_INF_GruppoA_PrestitiBancari\\AS2122_4H_INF_GruppoA_PrestitiBancari\\Libreria_Classi\\Prestiti_DLL\\obj\\",
+        "outputPath": "C:\\Users\\filip\\Desktop\\C#\\GruppoAprestito\\AS2122_4H_INF_GruppoA_PrestitiBancari\\AS2122_4H_INF_GruppoA_PrestitiBancari\\Libreria_Classi\\Prestiti_DLL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\filip\\AppData\\Roaming\\NuGet\\NuGet.Config",
