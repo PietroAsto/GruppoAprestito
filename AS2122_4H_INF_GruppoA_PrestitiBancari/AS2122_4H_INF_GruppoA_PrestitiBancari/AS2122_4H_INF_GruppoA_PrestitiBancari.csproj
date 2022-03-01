@@ -46,11 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form\FormAccedi.cs">
+    <Compile Include="Form\FormAggiungiPrestito.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form\FormAccedi.Designer.cs">
-      <DependentUpon>FormAccedi.cs</DependentUpon>
+    <Compile Include="Form\FormAggiungiPrestito.Designer.cs">
+      <DependentUpon>FormAggiungiPrestito.cs</DependentUpon>
     </Compile>
     <Compile Include="Form\FormAggiungi Cliente.cs">
       <SubType>Form</SubType>
@@ -61,40 +61,40 @@
     <Compile Include="Classi\Banca.cs" />
     <Compile Include="Classi\Cliente.cs" />
     <Compile Include="Classi\Prestito.cs" />
-    <Compile Include="Form\Form1.cs">
+    <Compile Include="Form\FormMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Form\FormMenu.Designer.cs">
+      <DependentUpon>FormMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form\Modifica.cs">
+    <Compile Include="Form\FormModificaCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form\Modifica.Designer.cs">
-      <DependentUpon>Modifica.cs</DependentUpon>
+    <Compile Include="Form\FormModificaCliente.Designer.cs">
+      <DependentUpon>FormModificaCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form\Prestiti.cs">
+    <Compile Include="Form\FormRicercaPrestiti.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form\Prestiti.Designer.cs">
-      <DependentUpon>Prestiti.cs</DependentUpon>
+    <Compile Include="Form\FormRicercaPrestiti.Designer.cs">
+      <DependentUpon>FormRicercaPrestiti.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form\FormAccedi.resx">
-      <DependentUpon>FormAccedi.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Form\FormAggiungi Cliente.resx">
       <DependentUpon>FormAggiungi Cliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Form\FormAggiungiPrestito.resx">
+      <DependentUpon>FormAggiungiPrestito.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form\Modifica.resx">
-      <DependentUpon>Modifica.cs</DependentUpon>
+    <EmbeddedResource Include="Form\FormMenu.resx">
+      <DependentUpon>FormMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form\Prestiti.resx">
-      <DependentUpon>Prestiti.cs</DependentUpon>
+    <EmbeddedResource Include="Form\FormModificaCliente.resx">
+      <DependentUpon>FormModificaCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormRicercaPrestiti.resx">
+      <DependentUpon>FormRicercaPrestiti.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
