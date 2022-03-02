@@ -5,7 +5,7 @@ VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AS2122_4H_INF_GruppoA_PrestitiBancari", "AS2122_4H_INF_GruppoA_PrestitiBancari\AS2122_4H_INF_GruppoA_PrestitiBancari.csproj", "{FE8B493A-AF1A-4FE7-9254-84349D643ADF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prestiti_DLL", "AS2122_4H_INF_GruppoA_PrestitiBancari\Libreria_Classi\Prestiti_DLL\Prestiti_DLL.csproj", "{99DE14BD-EBCE-4F2E-92C1-59F229658872}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrestitiDLL", "PrestitiDLL\PrestitiDLL.csproj", "{AD097213-4A7F-4261-84E0-F5C195715F7B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{FE8B493A-AF1A-4FE7-9254-84349D643ADF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE8B493A-AF1A-4FE7-9254-84349D643ADF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE8B493A-AF1A-4FE7-9254-84349D643ADF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{99DE14BD-EBCE-4F2E-92C1-59F229658872}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{99DE14BD-EBCE-4F2E-92C1-59F229658872}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{99DE14BD-EBCE-4F2E-92C1-59F229658872}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{99DE14BD-EBCE-4F2E-92C1-59F229658872}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD097213-4A7F-4261-84E0-F5C195715F7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD097213-4A7F-4261-84E0-F5C195715F7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD097213-4A7F-4261-84E0-F5C195715F7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD097213-4A7F-4261-84E0-F5C195715F7B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

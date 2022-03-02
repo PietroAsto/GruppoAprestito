@@ -7,11 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Prestiti_DLL;
+
 
 namespace AS2122_4H_INF_GruppoA_PrestitiBancari
 {
     public partial class Menu : Form
     {
+        internal Banca banca = new Banca("Banca");
+        
         public Menu()
         {
             InitializeComponent();

@@ -33,7 +33,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PrestitiDLL">
+      <HintPath>..\PrestitiDLL\bin\Debug\PrestitiDLL.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -58,9 +62,6 @@
     <Compile Include="Form\FormAggiungi Cliente.Designer.cs">
       <DependentUpon>FormAggiungi Cliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="Classi\Banca.cs" />
-    <Compile Include="Classi\Cliente.cs" />
-    <Compile Include="Classi\Prestito.cs" />
     <Compile Include="Form\FormMenu.cs">
       <SubType>Form</SubType>
     </Compile>

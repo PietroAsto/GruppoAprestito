@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Prestiti_DLL;
 
 namespace AS2122_4H_INF_GruppoA_PrestitiBancari
 {
@@ -19,14 +20,25 @@ namespace AS2122_4H_INF_GruppoA_PrestitiBancari
             m1 = m;
         }
 
-        private void Aggiungi_Cliente_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void Aggiungi_Click(object sender, EventArgs e)
         {
-           
+            // prendo il testo delle textBox
+            string nuovo_nome = tb_nome.Text;
+            string nuovo_cognome = tb_cognome.Text;
+            string nuovo_cf = tb_cf.Text;
+            double nuovo_stipendio = double.Parse(tb_stipendio.Text);
+            
+            // Creo un nuovo cliente
+            Cliente nuovo_cliente = new Cliente(nuovo_nome, nuovo_cognome, nuovo_cf, nuovo_stipendio);
+            
+            // Aggiungo un cliente alla lista
+            m1.banca.clienti.Add(nuovo_cliente);
+
+            // Svuoto TextBox
+            tb_nome.Text = "";
+            tb_cognome.Text = "";
+            tb_cf.Text = "";
+            tb_stipendio.Text = "";
         }
     }
 }

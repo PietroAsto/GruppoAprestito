@@ -32,10 +32,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.tb_nome = new System.Windows.Forms.TextBox();
+            this.tb_cognome = new System.Windows.Forms.TextBox();
+            this.tb_cf = new System.Windows.Forms.TextBox();
+            this.tb_stipendio = new System.Windows.Forms.TextBox();
             this.Aggiungi = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -75,33 +75,33 @@
             this.label4.TabIndex = 3;
             this.label4.Text = "Stipendio";
             // 
-            // textBox1
+            // tb_nome
             // 
-            this.textBox1.Location = new System.Drawing.Point(184, 6);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(115, 22);
-            this.textBox1.TabIndex = 4;
+            this.tb_nome.Location = new System.Drawing.Point(184, 6);
+            this.tb_nome.Name = "tb_nome";
+            this.tb_nome.Size = new System.Drawing.Size(115, 22);
+            this.tb_nome.TabIndex = 4;
             // 
-            // textBox2
+            // tb_cognome
             // 
-            this.textBox2.Location = new System.Drawing.Point(184, 55);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(115, 22);
-            this.textBox2.TabIndex = 5;
+            this.tb_cognome.Location = new System.Drawing.Point(184, 55);
+            this.tb_cognome.Name = "tb_cognome";
+            this.tb_cognome.Size = new System.Drawing.Size(115, 22);
+            this.tb_cognome.TabIndex = 5;
             // 
-            // textBox3
+            // tb_cf
             // 
-            this.textBox3.Location = new System.Drawing.Point(184, 100);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(115, 22);
-            this.textBox3.TabIndex = 6;
+            this.tb_cf.Location = new System.Drawing.Point(184, 100);
+            this.tb_cf.Name = "tb_cf";
+            this.tb_cf.Size = new System.Drawing.Size(115, 22);
+            this.tb_cf.TabIndex = 6;
             // 
-            // textBox4
+            // tb_stipendio
             // 
-            this.textBox4.Location = new System.Drawing.Point(184, 150);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(115, 22);
-            this.textBox4.TabIndex = 7;
+            this.tb_stipendio.Location = new System.Drawing.Point(184, 150);
+            this.tb_stipendio.Name = "tb_stipendio";
+            this.tb_stipendio.Size = new System.Drawing.Size(115, 22);
+            this.tb_stipendio.TabIndex = 7;
             // 
             // Aggiungi
             // 
@@ -119,17 +119,16 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.Aggiungi);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tb_stipendio);
+            this.Controls.Add(this.tb_cf);
+            this.Controls.Add(this.tb_cognome);
+            this.Controls.Add(this.tb_nome);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Aggiungi_Cliente";
             this.Text = "Aggiungi_Cliente";
-            this.Load += new System.EventHandler(this.Aggiungi_Cliente_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -141,10 +140,10 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox tb_nome;
+        private System.Windows.Forms.TextBox tb_cognome;
+        private System.Windows.Forms.TextBox tb_cf;
+        private System.Windows.Forms.TextBox tb_stipendio;
         private System.Windows.Forms.Button Aggiungi;
     }
 }
