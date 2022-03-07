@@ -27,3 +27,6 @@ tramite rispettivi Nome, Cognome e codice fiscale. Nel menù troviamo anche un b
 Sempre nel menù si trova un'altro tasto con il quale si inseriscono il codice fiscale del cliente e grazie a ciò si può risalire a tutti i movimenti
 bancari relativi ai prestiti del cliente, e di conseguenza di possono vedere i prestiti concessi,
 l'ammontare totale dei prestiti e in caso si possono implementare i prestiti
+
+GANTT
+https://docs.google.com/spreadsheets/d/1LQoQqumrWYBeVznq9uwLqyE4mvoT8ckpxGrpkkg5BHc/edit?usp=sharing
