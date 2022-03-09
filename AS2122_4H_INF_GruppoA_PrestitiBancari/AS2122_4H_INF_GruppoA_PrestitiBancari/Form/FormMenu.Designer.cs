@@ -60,7 +60,7 @@
             // 
             // prestiti
             // 
-            this.prestiti.Location = new System.Drawing.Point(9, 21);
+            this.prestiti.Location = new System.Drawing.Point(6, 62);
             this.prestiti.Name = "prestiti";
             this.prestiti.Size = new System.Drawing.Size(140, 34);
             this.prestiti.TabIndex = 4;
@@ -70,8 +70,8 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.AggiungiPrestito);
             this.groupBox1.Controls.Add(this.prestiti);
+            this.groupBox1.Controls.Add(this.AggiungiPrestito);
             this.groupBox1.Location = new System.Drawing.Point(18, 124);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(162, 105);
@@ -81,7 +81,7 @@
             // 
             // AggiungiPrestito
             // 
-            this.AggiungiPrestito.Location = new System.Drawing.Point(9, 61);
+            this.AggiungiPrestito.Location = new System.Drawing.Point(6, 21);
             this.AggiungiPrestito.Name = "AggiungiPrestito";
             this.AggiungiPrestito.Size = new System.Drawing.Size(140, 35);
             this.AggiungiPrestito.TabIndex = 7;

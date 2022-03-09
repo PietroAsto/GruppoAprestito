@@ -17,35 +17,70 @@ namespace AS2122_4H_INF_GruppoA_PrestitiBancari
         public FormModificaCliente(Menu m)
         {
             InitializeComponent();
+            
             m1 = m;
+
+            RefreshClienti();
         }
 
         private void btn_modifica_cliente_Click(object sender, EventArgs e)
         {
-            
+            var cliente_selezionato = (Cliente)cb_scegli_cliente.SelectedValue;
+
+            if (cliente_selezionato != null)
+            {
+                // Assegno il testo che è all'interno della textbox al campo del Cliente
+                cliente_selezionato.Nome = tb_nome.Text;
+                cliente_selezionato.Cognome = tb_cognome.Text;
+                cliente_selezionato.CodiceFiscale = tb_cf.Text;
+                cliente_selezionato.Stipendio = Convert.ToDouble(tb_stipendio.Text);
+            }
+
+            RefreshClienti();
         }
 
         private void btn_elimina_cliente_Click(object sender, EventArgs e)
         {
-            string nome_eliminato = tb_nome.Text;
-            string cognome_eliminato = tb_cognome.Text;
-            string cf_eliminato = tb_cf.Text;
-            double stipendio_eliminato = double.Parse(tb_stipendio.Text);
-            Cliente cliente = new Cliente(nome_eliminato, cognome_eliminato, cf_eliminato, stipendio_eliminato);
+            // Recupero il cliente selezionato
+            var cliente_selezionato = (Cliente)cb_scegli_cliente.SelectedValue;
+
 
             // Elimino un cliente
-            m1.banca.clienti.Remove(cliente);
+            m1.banca.clienti.Remove(cliente_selezionato);
 
-            // Svuoto TextBox
+            RefreshClienti();
+
+            //Svuoto TextBox
             tb_nome.Text = "";
             tb_cognome.Text = "";
             tb_cf.Text = "";
             tb_stipendio.Text = "";
         }
 
-        private void cb_scegli_cliente_SelectedIndexChanged(object sender, EventArgs e)
+
+        private void cb_scegli_cliente_SelectedValueChanged(object sender, EventArgs e)
         {
-            //cb_scegli_cliente.Text = m1.banca.clienti[Cliente()]
+            // Recupero il cliente selezionato
+            var cliente_selezionato = (Cliente)cb_scegli_cliente.SelectedValue;
+
+            if (cliente_selezionato != null)
+            {
+                tb_nome.Text = cliente_selezionato.Nome;
+                tb_cognome.Text = cliente_selezionato.Cognome;
+                tb_cf.Text = cliente_selezionato.CodiceFiscale;
+                tb_stipendio.Text = cliente_selezionato.Stipendio.ToString();
+            }
+        }
+
+        private void RefreshClienti()
+        {
+            // Svuoto la lista
+            cb_scegli_cliente.DataSource = null;
+
+            // Aggiunta dei nomi dei clienti ad una combobox
+            cb_scegli_cliente.DataSource = m1.banca.clienti;
+            cb_scegli_cliente.DisplayMember = "CodiceFiscale";
+            cb_scegli_cliente.ValueMember = "Self";
         }
     }
 }

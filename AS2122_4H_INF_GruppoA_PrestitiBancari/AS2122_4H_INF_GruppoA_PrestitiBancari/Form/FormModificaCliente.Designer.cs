@@ -44,7 +44,7 @@
             // 
             // btn_modifica_cliente
             // 
-            this.btn_modifica_cliente.Location = new System.Drawing.Point(29, 365);
+            this.btn_modifica_cliente.Location = new System.Drawing.Point(55, 365);
             this.btn_modifica_cliente.Name = "btn_modifica_cliente";
             this.btn_modifica_cliente.Size = new System.Drawing.Size(75, 23);
             this.btn_modifica_cliente.TabIndex = 0;
@@ -54,7 +54,7 @@
             // 
             // btn_elimina_cliente
             // 
-            this.btn_elimina_cliente.Location = new System.Drawing.Point(225, 361);
+            this.btn_elimina_cliente.Location = new System.Drawing.Point(260, 361);
             this.btn_elimina_cliente.Name = "btn_elimina_cliente";
             this.btn_elimina_cliente.Size = new System.Drawing.Size(86, 27);
             this.btn_elimina_cliente.TabIndex = 1;
@@ -67,36 +67,37 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(12, 36);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(92, 16);
+            this.label1.Size = new System.Drawing.Size(231, 16);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Scegli Cliente ";
+            this.label1.Text = "Scegli Cliente Tramite Codice Fiscale";
             // 
             // cb_scegli_cliente
             // 
+            this.cb_scegli_cliente.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cb_scegli_cliente.FormattingEnabled = true;
-            this.cb_scegli_cliente.Location = new System.Drawing.Point(181, 33);
+            this.cb_scegli_cliente.Location = new System.Drawing.Point(260, 28);
             this.cb_scegli_cliente.Name = "cb_scegli_cliente";
             this.cb_scegli_cliente.Size = new System.Drawing.Size(130, 24);
             this.cb_scegli_cliente.TabIndex = 3;
-            this.cb_scegli_cliente.SelectedIndexChanged += new System.EventHandler(this.cb_scegli_cliente_SelectedIndexChanged);
+            this.cb_scegli_cliente.SelectedValueChanged += new System.EventHandler(this.cb_scegli_cliente_SelectedValueChanged);
             // 
             // tb_nome
             // 
-            this.tb_nome.Location = new System.Drawing.Point(181, 86);
+            this.tb_nome.Location = new System.Drawing.Point(260, 86);
             this.tb_nome.Name = "tb_nome";
             this.tb_nome.Size = new System.Drawing.Size(130, 22);
             this.tb_nome.TabIndex = 4;
             // 
             // tb_cognome
             // 
-            this.tb_cognome.Location = new System.Drawing.Point(181, 142);
+            this.tb_cognome.Location = new System.Drawing.Point(260, 142);
             this.tb_cognome.Name = "tb_cognome";
             this.tb_cognome.Size = new System.Drawing.Size(130, 22);
             this.tb_cognome.TabIndex = 5;
             // 
             // tb_cf
             // 
-            this.tb_cf.Location = new System.Drawing.Point(181, 212);
+            this.tb_cf.Location = new System.Drawing.Point(260, 212);
             this.tb_cf.Name = "tb_cf";
             this.tb_cf.Size = new System.Drawing.Size(130, 22);
             this.tb_cf.TabIndex = 6;
@@ -139,7 +140,7 @@
             // 
             // tb_stipendio
             // 
-            this.tb_stipendio.Location = new System.Drawing.Point(181, 278);
+            this.tb_stipendio.Location = new System.Drawing.Point(260, 278);
             this.tb_stipendio.Name = "tb_stipendio";
             this.tb_stipendio.Size = new System.Drawing.Size(130, 22);
             this.tb_stipendio.TabIndex = 11;

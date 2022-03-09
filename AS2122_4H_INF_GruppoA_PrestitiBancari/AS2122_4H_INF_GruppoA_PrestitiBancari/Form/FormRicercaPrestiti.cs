@@ -17,6 +17,8 @@ namespace AS2122_4H_INF_GruppoA_PrestitiBancari
         {
             InitializeComponent();
             m1 = m;
+
+            dgv_prestiti.DataSource = m1.banca.prestiti;
         }
 
         private void Prestiti_Load(object sender, EventArgs e)
