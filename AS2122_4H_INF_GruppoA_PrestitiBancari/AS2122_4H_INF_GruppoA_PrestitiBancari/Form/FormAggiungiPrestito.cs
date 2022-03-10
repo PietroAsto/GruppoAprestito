@@ -39,11 +39,21 @@ namespace AS2122_4H_INF_GruppoA_PrestitiBancari
             // Creo e aggiungo un prestito alla lista dei prestiti
             Prestito prestito = new Prestito(cliente, ammontare, rata, inizio, fine);
             m1.banca.prestiti.Add(prestito);
+
+            // Ripristino i valori del prestito quando si aggiunge un prestito
+            nud_ammontare.Value = 0;
+            nud_rata.Value = 0;
+            dtp_inizio.Value = DateTime.Today;
+            dtp_fine.Value = DateTime.Today;
         }
 
         private void cb_clienti_SelectedValueChanged(object sender, EventArgs e)
         {
-            // ToDo: ripristinare campi 
+            // Ripristino i valori del prestito quando si cambia cliente
+            nud_ammontare.Value = 0;
+            nud_rata.Value = 0;
+            dtp_inizio.Value = DateTime.Today;
+            dtp_fine.Value = DateTime.Today;
         }
     }
 }

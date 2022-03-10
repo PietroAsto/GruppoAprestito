@@ -14,7 +14,7 @@ namespace AS2122_4H_INF_GruppoA_PrestitiBancari
 {
     public partial class Menu : Form
     {
-        internal Banca banca = new Banca("Banca");
+        internal Banca banca = new Banca("Arabab Ashabeb");
         internal Banca Banca { get { return banca; } }
         
         public Menu()

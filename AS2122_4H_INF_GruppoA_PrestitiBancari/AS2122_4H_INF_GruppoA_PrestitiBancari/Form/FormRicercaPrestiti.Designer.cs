@@ -61,6 +61,7 @@
             this.btn_ricerca.TabIndex = 1;
             this.btn_ricerca.Text = "Ricerca";
             this.btn_ricerca.UseVisualStyleBackColor = true;
+            this.btn_ricerca.Click += new System.EventHandler(this.btn_ricerca_Click);
             // 
             // tb_cf
             // 
