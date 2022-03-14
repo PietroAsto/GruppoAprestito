@@ -37,8 +37,8 @@ namespace AS2122_4H_INF_GruppoA_PrestitiBancari
             DateTime fine = dtp_fine.Value;
 
             // Creo e aggiungo un prestito alla lista dei prestiti
-            Prestito prestito = new Prestito(cliente, ammontare, rata, inizio, fine);
-            b1.prestiti.Add(prestito);
+            Prestito prestito = new Prestito(ammontare, rata, inizio, fine);
+            cliente.prestiti.Add(prestito);
 
             // Ripristino i valori del prestito quando si aggiunge un prestito
             nud_ammontare.Value = 0;

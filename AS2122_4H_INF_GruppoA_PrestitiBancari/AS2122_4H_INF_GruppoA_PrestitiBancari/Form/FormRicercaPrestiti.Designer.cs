@@ -28,12 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormRicercaPrestiti));
             this.label1 = new System.Windows.Forms.Label();
             this.btn_ricerca = new System.Windows.Forms.Button();
             this.tb_cf = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tb_amm_tot = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
@@ -73,13 +72,13 @@
             this.tb_cf.Size = new System.Drawing.Size(168, 22);
             this.tb_cf.TabIndex = 2;
             // 
-            // textBox2
+            // tb_amm_tot
             // 
-            this.textBox2.Location = new System.Drawing.Point(318, 373);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(119, 22);
-            this.textBox2.TabIndex = 3;
+            this.tb_amm_tot.Location = new System.Drawing.Point(318, 373);
+            this.tb_amm_tot.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tb_amm_tot.Name = "tb_amm_tot";
+            this.tb_amm_tot.Size = new System.Drawing.Size(119, 22);
+            this.tb_amm_tot.TabIndex = 3;
             // 
             // label2
             // 
@@ -130,9 +129,6 @@
             this.dgv_prestiti.TabIndex = 9;
             this.dgv_prestiti.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_prestiti_CellContentClick);
             // 
-
-            
-            // 
             // FormRicercaPrestiti
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -143,7 +139,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.tb_amm_tot);
             this.Controls.Add(this.tb_cf);
             this.Controls.Add(this.btn_ricerca);
             this.Controls.Add(this.label1);
@@ -151,6 +147,7 @@
             this.Name = "FormRicercaPrestiti";
             this.Text = "Prestiti";
             this.Load += new System.EventHandler(this.Prestiti_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_prestiti)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -161,7 +158,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btn_ricerca;
         private System.Windows.Forms.TextBox tb_cf;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tb_amm_tot;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button2;

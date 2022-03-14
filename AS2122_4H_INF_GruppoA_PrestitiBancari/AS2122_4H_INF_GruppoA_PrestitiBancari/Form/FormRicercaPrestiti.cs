@@ -28,15 +28,27 @@ namespace AS2122_4H_INF_GruppoA_PrestitiBancari
 
         private void btn_ricerca_Click(object sender, EventArgs e)
         {
-            string cliente = tb_cf.Text;
+            string cf_cliente = tb_cf.Text;
 
-            foreach (Prestito p in b1.prestiti)
+            foreach (Cliente c in b1.clienti)
             {
-                if (p.Intestatario.CodiceFiscale == cliente)
+                if (c.CodiceFiscale == cf_cliente)
                 {
-                    dgv_prestiti.DataSource = b1.prestiti;
-                    dgv_prestiti.Columns.Remove("Intestatario");
+                    dgv_prestiti.DataSource = c.prestiti;
+
+                    // Levo l'orario, fondamentalmente perchè non serve
+                    dgv_prestiti.Columns[2].DefaultCellStyle.Format = "MM/dd/yyyy";
+                    dgv_prestiti.Columns[3].DefaultCellStyle.Format = "MM/dd/yyyy";
+
+                    // Metodo per calcolare l'ammontare totale
+                    double a_p = 0;
+                    for (int i = 0; i < c.prestiti.Count; i++)
+                    {
+                        a_p += c.prestiti[i].AmmontarePrestito;
+                    }
+                    tb_amm_tot.Text = a_p.ToString();
                 }
+
             }
         }
 

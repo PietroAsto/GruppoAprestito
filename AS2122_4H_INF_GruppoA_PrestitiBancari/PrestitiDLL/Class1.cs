@@ -7,12 +7,10 @@ namespace Prestiti_DLL
     {
         string Nome;
         public List<Cliente> clienti;
-        public List<Prestito> prestiti;
         public Banca(string nome)
         {
             this.Nome = nome;
             this.clienti = new List<Cliente>();
-            this.prestiti = new List<Prestito>();
         }
     }
 
@@ -25,6 +23,7 @@ namespace Prestiti_DLL
         public string Cognome { get; set; }
         public string CodiceFiscale { get; set; }
         public double Stipendio { get; set; }
+        public List<Prestito> prestiti;
 
         // Propietà creata per settare il ValueMember della combobox
         public Cliente Self
@@ -43,6 +42,7 @@ namespace Prestiti_DLL
             this.Cognome = cognome;
             this.CodiceFiscale = CF;
             this.Stipendio = stipendio;
+            this.prestiti = new List<Prestito>();
         }
 
     }
@@ -53,14 +53,12 @@ namespace Prestiti_DLL
         public double Rata { get; set; }
         public DateTime InizioPrestito { get; set; }
         public DateTime FinePrestito { get; set; }
-        public Cliente Intestatario { get; set; }
-        public Prestito(Cliente intestatario, double ammontare, double rata, DateTime inizio, DateTime fine)
+        public Prestito(double ammontare, double rata, DateTime inizio, DateTime fine)
         {
             this.AmmontarePrestito = ammontare;
             this.Rata = rata;
             this.InizioPrestito = inizio;
             this.FinePrestito = fine;
-            this.Intestatario = intestatario;
         }
     }
 }

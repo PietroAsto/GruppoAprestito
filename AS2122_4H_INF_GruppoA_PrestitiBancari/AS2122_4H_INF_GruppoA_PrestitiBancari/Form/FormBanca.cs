@@ -22,19 +22,17 @@ namespace AS2122_4H_INF_GruppoA_PrestitiBancari
             InitializeComponent();
 
             RiempiListe();
-
-
         }
 
         private void RiempiListe()
         {
             Cliente pietro = new Cliente("Pietro", "Astorino", "gylo86", 7996.98);
+            pietro.prestiti.Add(new Prestito(874.98, 80.3, DateTime.Now, DateTime.Now.AddDays(5)));
+            pietro.prestiti.Add(new Prestito(2345.52, 678.4, DateTime.Now, DateTime.Now.AddDays(45)));
+            
             banca.clienti.Add(pietro);
             banca.clienti.Add(new Cliente("Filippo", "Verginelli", "hò79p", 980.98));
             banca.clienti.Add(new Cliente("Marco", "Perini", "uh9p73", 8967650.98));
-
-            banca.prestiti.Add(new Prestito(pietro, 874.98, 80.3, DateTime.Now, DateTime.Now.AddDays(5)));
-
         }
 
         private void Aggiungi_Cliente_Click(object sender, EventArgs e)
