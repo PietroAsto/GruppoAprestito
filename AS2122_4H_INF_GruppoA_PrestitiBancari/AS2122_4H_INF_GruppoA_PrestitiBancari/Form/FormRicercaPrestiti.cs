@@ -13,11 +13,11 @@ namespace AS2122_4H_INF_GruppoA_PrestitiBancari
 {
     public partial class FormRicercaPrestiti : Form
     {
-        Menu m1;
-        public FormRicercaPrestiti(Menu m)
+        Banca b1;
+        public FormRicercaPrestiti(Banca b)
         {
             InitializeComponent();
-            m1 = m;
+            b1 = b;
 
         }
 
@@ -30,10 +30,13 @@ namespace AS2122_4H_INF_GruppoA_PrestitiBancari
         {
             string cliente = tb_cf.Text;
 
-            foreach (Prestito p in m1.banca.prestiti)
+            foreach (Prestito p in b1.prestiti)
             {
-                if(p.Intestatario.CodiceFiscale == cliente) 
-                    dgv_prestiti.DataSource = m1.banca.prestiti;
+                if (p.Intestatario.CodiceFiscale == cliente)
+                {
+                    dgv_prestiti.DataSource = b1.prestiti;
+                    dgv_prestiti.Columns.Remove("Intestatario");
+                }
             }
         }
     }

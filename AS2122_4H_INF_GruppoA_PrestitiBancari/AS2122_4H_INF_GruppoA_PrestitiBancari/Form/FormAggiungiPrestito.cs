@@ -13,16 +13,16 @@ namespace AS2122_4H_INF_GruppoA_PrestitiBancari
 {
     public partial class FormAggiungiPrestito : Form
     {
-        Menu m1;
-        public FormAggiungiPrestito(Menu m)
+        Banca b1;
+        public FormAggiungiPrestito(Banca b)
         {
             InitializeComponent();
-            m1 = m;
+            b1 = b;
         }
 
         private void FormAggiungiPrestito_Load(object sender, EventArgs e)
         {
-            cb_clienti.DataSource = m1.banca.clienti;
+            cb_clienti.DataSource = b1.clienti;
             cb_clienti.DisplayMember = "NomeCognome";
             cb_clienti.ValueMember = "Self";
         }
@@ -38,13 +38,16 @@ namespace AS2122_4H_INF_GruppoA_PrestitiBancari
 
             // Creo e aggiungo un prestito alla lista dei prestiti
             Prestito prestito = new Prestito(cliente, ammontare, rata, inizio, fine);
-            m1.banca.prestiti.Add(prestito);
+            b1.prestiti.Add(prestito);
 
             // Ripristino i valori del prestito quando si aggiunge un prestito
             nud_ammontare.Value = 0;
             nud_rata.Value = 0;
             dtp_inizio.Value = DateTime.Today;
             dtp_fine.Value = DateTime.Today;
+
+            MessageBox.Show("Prestito aggiunto correttamente");
+            
         }
 
         private void cb_clienti_SelectedValueChanged(object sender, EventArgs e)

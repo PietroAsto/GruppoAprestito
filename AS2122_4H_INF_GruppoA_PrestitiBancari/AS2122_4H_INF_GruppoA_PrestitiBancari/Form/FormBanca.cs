@@ -39,25 +39,25 @@ namespace AS2122_4H_INF_GruppoA_PrestitiBancari
 
         private void Aggiungi_Cliente_Click(object sender, EventArgs e)
         {
-            Aggiungi_Cliente aggiungi_cliente = new Aggiungi_Cliente(this);
+            Aggiungi_Cliente aggiungi_cliente = new Aggiungi_Cliente(Banca);
             aggiungi_cliente.Show();
         }
 
         private void Ricerca_Prestiti_Click(object sender, EventArgs e)
         {
-            FormRicercaPrestiti ricerca_prestiti = new FormRicercaPrestiti(this);
+            FormRicercaPrestiti ricerca_prestiti = new FormRicercaPrestiti(Banca);
             ricerca_prestiti.Show();
         }
 
         private void AggiungiPrestito_Click(object sender, EventArgs e)
         {
-            FormAggiungiPrestito aggiungi_prestito = new FormAggiungiPrestito(this);
+            FormAggiungiPrestito aggiungi_prestito = new FormAggiungiPrestito(Banca);
             aggiungi_prestito.Show();
         }
 
         private void ModificaCliente_Click(object sender, EventArgs e)
         {
-            FormModificaCliente modifica = new FormModificaCliente(this);
+            FormModificaCliente modifica = new FormModificaCliente(Banca);
             modifica.Show();
         }
     }

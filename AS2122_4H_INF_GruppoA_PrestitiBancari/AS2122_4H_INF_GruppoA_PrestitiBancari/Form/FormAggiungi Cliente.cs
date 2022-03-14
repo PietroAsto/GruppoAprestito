@@ -13,11 +13,11 @@ namespace AS2122_4H_INF_GruppoA_PrestitiBancari
 {
     public partial class Aggiungi_Cliente : Form
     {
-        private Menu m1;
-        public Aggiungi_Cliente(Menu m)
+        private Banca b1;
+        public Aggiungi_Cliente(Banca b)
         {
             InitializeComponent();
-            m1 = m;
+            b1 = b;
         }
 
         private void Aggiungi_Click(object sender, EventArgs e)
@@ -32,13 +32,15 @@ namespace AS2122_4H_INF_GruppoA_PrestitiBancari
             Cliente nuovo_cliente = new Cliente(nuovo_nome, nuovo_cognome, nuovo_cf, nuovo_stipendio);
             
             // Aggiungo un cliente alla lista
-            m1.banca.clienti.Add(nuovo_cliente);
+            b1.clienti.Add(nuovo_cliente);
 
             // Svuoto TextBox
             tb_nome.Text = "";
             tb_cognome.Text = "";
             tb_cf.Text = "";
             tb_stipendio.Text = "";
+
+            MessageBox.Show("Cliente aggiunto correttamente");
         }
     }
 }

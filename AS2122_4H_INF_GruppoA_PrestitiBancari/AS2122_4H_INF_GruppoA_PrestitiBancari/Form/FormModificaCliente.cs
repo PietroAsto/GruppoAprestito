@@ -13,12 +13,12 @@ namespace AS2122_4H_INF_GruppoA_PrestitiBancari
 {
     public partial class FormModificaCliente : Form
     {
-        Menu m1;
-        public FormModificaCliente(Menu m)
+        Banca b1;
+        public FormModificaCliente(Banca b)
         {
             InitializeComponent();
             
-            m1 = m;
+            b1 = b;
 
             RefreshClienti();
         }
@@ -37,6 +37,8 @@ namespace AS2122_4H_INF_GruppoA_PrestitiBancari
             }
 
             RefreshClienti();
+
+            MessageBox.Show("Cliente modificato");
         }
 
         private void btn_elimina_cliente_Click(object sender, EventArgs e)
@@ -46,7 +48,7 @@ namespace AS2122_4H_INF_GruppoA_PrestitiBancari
 
 
             // Elimino un cliente
-            m1.banca.clienti.Remove(cliente_selezionato);
+            b1.clienti.Remove(cliente_selezionato);
 
             RefreshClienti();
 
@@ -55,6 +57,8 @@ namespace AS2122_4H_INF_GruppoA_PrestitiBancari
             tb_cognome.Text = "";
             tb_cf.Text = "";
             tb_stipendio.Text = "";
+
+            MessageBox.Show("Cliente eliminato"); 
         }
 
 
@@ -78,7 +82,7 @@ namespace AS2122_4H_INF_GruppoA_PrestitiBancari
             cb_scegli_cliente.DataSource = null;
 
             // Aggiunta dei nomi dei clienti ad una combobox
-            cb_scegli_cliente.DataSource = m1.banca.clienti;
+            cb_scegli_cliente.DataSource = b1.clienti;
             cb_scegli_cliente.DisplayMember = "CodiceFiscale";
             cb_scegli_cliente.ValueMember = "Self";
         }

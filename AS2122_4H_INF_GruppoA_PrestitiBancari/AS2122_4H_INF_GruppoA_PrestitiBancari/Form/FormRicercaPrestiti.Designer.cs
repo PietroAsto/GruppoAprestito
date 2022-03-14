@@ -109,12 +109,12 @@
             this.dgv_prestiti.AllowUserToAddRows = false;
             this.dgv_prestiti.AllowUserToDeleteRows = false;
             this.dgv_prestiti.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_prestiti.Location = new System.Drawing.Point(38, 102);
+            this.dgv_prestiti.Location = new System.Drawing.Point(71, 102);
             this.dgv_prestiti.Name = "dgv_prestiti";
             this.dgv_prestiti.ReadOnly = true;
             this.dgv_prestiti.RowHeadersWidth = 51;
             this.dgv_prestiti.RowTemplate.Height = 24;
-            this.dgv_prestiti.Size = new System.Drawing.Size(737, 150);
+            this.dgv_prestiti.Size = new System.Drawing.Size(606, 150);
             this.dgv_prestiti.TabIndex = 9;
             // 
             // bancaBindingSource
