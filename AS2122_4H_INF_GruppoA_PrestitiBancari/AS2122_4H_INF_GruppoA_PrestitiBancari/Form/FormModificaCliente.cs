@@ -86,5 +86,10 @@ namespace AS2122_4H_INF_GruppoA_PrestitiBancari
             cb_scegli_cliente.DisplayMember = "CodiceFiscale";
             cb_scegli_cliente.ValueMember = "Self";
         }
+
+        private void FormModificaCliente_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

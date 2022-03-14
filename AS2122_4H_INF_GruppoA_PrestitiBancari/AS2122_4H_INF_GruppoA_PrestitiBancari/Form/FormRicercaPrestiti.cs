@@ -39,5 +39,10 @@ namespace AS2122_4H_INF_GruppoA_PrestitiBancari
                 }
             }
         }
+
+        private void dgv_prestiti_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
