@@ -60,5 +60,20 @@ namespace AS2122_4H_INF_GruppoA_PrestitiBancari
             FormModificaCliente modifica = new FormModificaCliente(this);
             modifica.Show();
         }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Menu_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

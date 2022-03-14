@@ -36,5 +36,10 @@ namespace AS2122_4H_INF_GruppoA_PrestitiBancari
                     dgv_prestiti.DataSource = m1.banca.prestiti;
             }
         }
+
+        private void dgv_prestiti_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
