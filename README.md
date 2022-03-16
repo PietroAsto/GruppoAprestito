@@ -30,3 +30,5 @@ l'ammontare totale dei prestiti e in caso si possono implementare i prestiti
 
 GANTT
 https://docs.google.com/spreadsheets/d/1LQoQqumrWYBeVznq9uwLqyE4mvoT8ckpxGrpkkg5BHc/edit?usp=sharing
+PRESENTAZIONE
+https://docs.google.com/presentation/d/1nnlTSuaKY6F5kaN4E2MafVVTF5_f5nRrtUPugIv_1XU/edit?usp=sharing
