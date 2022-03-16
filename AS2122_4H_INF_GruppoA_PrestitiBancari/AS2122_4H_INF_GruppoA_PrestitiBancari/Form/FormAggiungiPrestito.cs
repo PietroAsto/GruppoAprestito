@@ -32,7 +32,7 @@ namespace AS2122_4H_INF_GruppoA_PrestitiBancari
             // Salvo tutte le info del prestito
             Cliente cliente = (Cliente)cb_clienti.SelectedValue;
             double ammontare = ((double)nud_ammontare.Value);
-            double rata = ((double)nud_ammontare.Value);
+            double rata = ((double)nud_rata.Value);
             DateTime inizio = dtp_inizio.Value;
             DateTime fine = dtp_fine.Value;
 

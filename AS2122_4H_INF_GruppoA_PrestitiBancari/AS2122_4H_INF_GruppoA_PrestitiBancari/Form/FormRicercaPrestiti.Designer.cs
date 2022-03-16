@@ -35,7 +35,7 @@
             this.tb_amm_tot = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.bt_stampa_prospetto = new System.Windows.Forms.Button();
             this.dgv_prestiti = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_prestiti)).BeginInit();
             this.SuspendLayout();
@@ -48,7 +48,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(35, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(121, 20);
+            this.label1.Size = new System.Drawing.Size(101, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "Codice Fiscale ";
             // 
@@ -88,7 +88,7 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(35, 108);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(133, 20);
+            this.label2.Size = new System.Drawing.Size(112, 17);
             this.label2.TabIndex = 4;
             this.label2.Text = "Prestiti Concessi";
             // 
@@ -99,20 +99,21 @@
             this.label3.Font = new System.Drawing.Font("Georgia", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(36, 373);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(243, 20);
+            this.label3.Size = new System.Drawing.Size(200, 17);
             this.label3.TabIndex = 5;
             this.label3.Text = "Ammontare Totale Dei Prestiti";
             // 
-            // button2
+            // bt_stampa_prospetto
             // 
-            this.button2.Font = new System.Drawing.Font("Georgia", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(40, 317);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(156, 32);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "Stampa Prospetto";
-            this.button2.UseVisualStyleBackColor = true;
+            this.bt_stampa_prospetto.Font = new System.Drawing.Font("Georgia", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_stampa_prospetto.Location = new System.Drawing.Point(40, 317);
+            this.bt_stampa_prospetto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bt_stampa_prospetto.Name = "bt_stampa_prospetto";
+            this.bt_stampa_prospetto.Size = new System.Drawing.Size(196, 32);
+            this.bt_stampa_prospetto.TabIndex = 7;
+            this.bt_stampa_prospetto.Text = "Stampa Prospetto";
+            this.bt_stampa_prospetto.UseVisualStyleBackColor = true;
+            this.bt_stampa_prospetto.Click += new System.EventHandler(this.bt_stampa_prospetto_Click);
             // 
             // dgv_prestiti
             // 
@@ -136,7 +137,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.dgv_prestiti);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.bt_stampa_prospetto);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.tb_amm_tot);
@@ -161,7 +162,7 @@
         private System.Windows.Forms.TextBox tb_amm_tot;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button bt_stampa_prospetto;
         private System.Windows.Forms.DataGridView dgv_prestiti;
     }
 }
