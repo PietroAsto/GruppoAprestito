@@ -26,7 +26,6 @@ namespace AS2122_4H_INF_GruppoA_PrestitiBancari
         private void btn_ricerca_Click(object sender, EventArgs e)
         {
             string cf_cliente = tb_cf.Text;
-            //Prestito p;
 
             if (tb_cf.Text == "")
             {
@@ -65,7 +64,6 @@ namespace AS2122_4H_INF_GruppoA_PrestitiBancari
                     }
                     tb_amm_tot.Text = a_p.ToString();
                 }
-
             }
         }
         private void bt_stampa_prospetto_Click(object sender, EventArgs e)
