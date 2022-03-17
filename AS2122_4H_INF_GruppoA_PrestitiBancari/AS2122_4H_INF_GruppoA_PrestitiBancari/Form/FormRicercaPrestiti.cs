@@ -48,6 +48,7 @@ namespace AS2122_4H_INF_GruppoA_PrestitiBancari
 
                     dgv_prestiti.DataSource = c.prestiti;
                     dgv_prestiti.Columns.Remove("Intestatario");
+                    dgv_prestiti.Columns.Remove("NomeCognome");
 
                     // Salvo il cliente ricercato
                     cliente_ricercato = c;
