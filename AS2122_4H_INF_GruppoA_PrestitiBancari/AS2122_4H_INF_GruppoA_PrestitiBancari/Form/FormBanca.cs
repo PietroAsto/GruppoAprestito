@@ -27,8 +27,13 @@ namespace AS2122_4H_INF_GruppoA_PrestitiBancari
         private void RiempiListe()
         {
             Cliente pietro = new Cliente("Pietro", "Astorino", "gylo86", 7996.98);
-            pietro.prestiti.Add(new Prestito(pietro, 874.98, 80.3, DateTime.Now, DateTime.Now.AddDays(5)));
-            pietro.prestiti.Add(new Prestito(pietro, 2345.52, 678.4, DateTime.Now, DateTime.Now.AddDays(45)));
+            Prestito p = new Prestito(pietro, 874.98, 80.3, DateTime.Now, DateTime.Now.AddDays(5));
+            Prestito p1 = new Prestito(pietro, 2345.52, 678.4, DateTime.Now, DateTime.Now.AddDays(45));
+            banca.prestiti_tot.Add(p);
+            banca.prestiti_tot.Add(p1);
+            pietro.prestiti.Add(p);
+            pietro.prestiti.Add(p1);
+
             
             
             banca.clienti.Add(pietro);
