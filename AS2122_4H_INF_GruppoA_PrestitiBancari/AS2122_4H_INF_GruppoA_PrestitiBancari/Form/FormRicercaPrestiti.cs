@@ -15,17 +15,19 @@ namespace AS2122_4H_INF_GruppoA_PrestitiBancari
     public partial class FormRicercaPrestiti : Form
     {
         Banca b1;
+        Prestito p1;
         Cliente cliente_ricercato;
-        public FormRicercaPrestiti(Banca b)
+        public FormRicercaPrestiti(Banca b, Prestito p)
         {
             InitializeComponent();
             b1 = b;
-
+            p1 = p;
         }
 
         private void btn_ricerca_Click(object sender, EventArgs e)
         {
             string cf_cliente = tb_cf.Text;
+            //Prestito p;
 
             if (tb_cf.Text == "")
             {
@@ -34,6 +36,8 @@ namespace AS2122_4H_INF_GruppoA_PrestitiBancari
                 tb_cognome_cliente_ricercato.Text = "Tutti";
 
                 dgv_prestiti.DataSource = b1.prestiti_tot;
+                dgv_prestiti.Columns[4].DataPropertyName = "NomeCognome";
+                dgv_prestiti.Columns.Remove("NomeCognome");
             }
 
             foreach (Cliente c in b1.clienti)
@@ -94,10 +98,14 @@ namespace AS2122_4H_INF_GruppoA_PrestitiBancari
                 File.WriteAllText(file, csv.ToString());
             }
         }
+        private void FormRicercaPrestiti_Load(object sender, EventArgs e)
+        {
+        }
 
         private void dgv_prestiti_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
+
     }
 }

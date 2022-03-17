@@ -165,6 +165,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormRicercaPrestiti";
             this.Text = "Prestiti";
+            this.Load += new System.EventHandler(this.FormRicercaPrestiti_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_prestiti)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

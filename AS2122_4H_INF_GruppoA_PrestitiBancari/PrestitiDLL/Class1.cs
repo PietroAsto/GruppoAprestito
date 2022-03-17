@@ -21,10 +21,11 @@ namespace Prestiti_DLL
         // Visto che Nome viene assegnato nel costruttore, aggiungo il metodo setter
         public string Nome { get; set; }
 
-        // Propietà usat per settare il DisplayMember della combobox
+        // Propietà usata per settare il DisplayMember della combobox
         public string Cognome { get; set; }
         public string CodiceFiscale { get; set; }
         public double Stipendio { get; set; }
+
         public List<Prestito> prestiti;
 
         // Propietà creata per settare il ValueMember della combobox
@@ -64,6 +65,11 @@ namespace Prestiti_DLL
             this.FinePrestito = fine;
             this.intestatario = intestatario;
 
+        }
+
+        public string NomeCognome
+        {
+            get { return intestatario.Nome + " " + intestatario.Cognome; }
         }
     }
 }
