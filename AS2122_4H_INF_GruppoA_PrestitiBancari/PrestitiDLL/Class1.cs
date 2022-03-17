@@ -7,10 +7,12 @@ namespace Prestiti_DLL
     {
         string Nome;
         public List<Cliente> clienti;
+        public List<Prestito> prestiti_tot;
         public Banca(string nome)
         {
             this.Nome = nome;
             this.clienti = new List<Cliente>();
+            this.prestiti_tot = new List<Prestito>();
         }
     }
 
@@ -53,12 +55,15 @@ namespace Prestiti_DLL
         public double Rata { get; set; }
         public DateTime InizioPrestito { get; set; }
         public DateTime FinePrestito { get; set; }
-        public Prestito(double ammontare, double rata, DateTime inizio, DateTime fine)
+        public Cliente intestatario { get; set; }
+        public Prestito(Cliente intestatario, double ammontare, double rata, DateTime inizio, DateTime fine)
         {
             this.AmmontarePrestito = ammontare;
             this.Rata = rata;
             this.InizioPrestito = inizio;
             this.FinePrestito = fine;
+            this.intestatario = intestatario;
+
         }
     }
 }

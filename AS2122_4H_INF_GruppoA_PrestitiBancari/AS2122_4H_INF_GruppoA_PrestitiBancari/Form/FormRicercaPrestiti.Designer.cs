@@ -37,6 +37,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.bt_stampa_prospetto = new System.Windows.Forms.Button();
             this.dgv_prestiti = new System.Windows.Forms.DataGridView();
+            this.tb_nome_cliente_ricercato = new System.Windows.Forms.TextBox();
+            this.tb_cognome_cliente_ricercato = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_prestiti)).BeginInit();
             this.SuspendLayout();
             // 
@@ -48,14 +50,14 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(35, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(101, 17);
+            this.label1.Size = new System.Drawing.Size(121, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Codice Fiscale ";
             // 
             // btn_ricerca
             // 
             this.btn_ricerca.Font = new System.Drawing.Font("Georgia", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_ricerca.Location = new System.Drawing.Point(197, 56);
+            this.btn_ricerca.Location = new System.Drawing.Point(195, 60);
             this.btn_ricerca.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_ricerca.Name = "btn_ricerca";
             this.btn_ricerca.Size = new System.Drawing.Size(98, 29);
@@ -88,7 +90,7 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(35, 108);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(112, 17);
+            this.label2.Size = new System.Drawing.Size(133, 20);
             this.label2.TabIndex = 4;
             this.label2.Text = "Prestiti Concessi";
             // 
@@ -99,7 +101,7 @@
             this.label3.Font = new System.Drawing.Font("Georgia", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(36, 373);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(200, 17);
+            this.label3.Size = new System.Drawing.Size(243, 20);
             this.label3.TabIndex = 5;
             this.label3.Text = "Ammontare Totale Dei Prestiti";
             // 
@@ -130,12 +132,28 @@
             this.dgv_prestiti.TabIndex = 9;
             this.dgv_prestiti.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_prestiti_CellContentClick);
             // 
+            // tb_nome_cliente_ricercato
+            // 
+            this.tb_nome_cliente_ricercato.Location = new System.Drawing.Point(417, 18);
+            this.tb_nome_cliente_ricercato.Name = "tb_nome_cliente_ricercato";
+            this.tb_nome_cliente_ricercato.Size = new System.Drawing.Size(141, 22);
+            this.tb_nome_cliente_ricercato.TabIndex = 10;
+            // 
+            // tb_cognome_cliente_ricercato
+            // 
+            this.tb_cognome_cliente_ricercato.Location = new System.Drawing.Point(628, 18);
+            this.tb_cognome_cliente_ricercato.Name = "tb_cognome_cliente_ricercato";
+            this.tb_cognome_cliente_ricercato.Size = new System.Drawing.Size(141, 22);
+            this.tb_cognome_cliente_ricercato.TabIndex = 11;
+            // 
             // FormRicercaPrestiti
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.tb_cognome_cliente_ricercato);
+            this.Controls.Add(this.tb_nome_cliente_ricercato);
             this.Controls.Add(this.dgv_prestiti);
             this.Controls.Add(this.bt_stampa_prospetto);
             this.Controls.Add(this.label3);
@@ -147,7 +165,6 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormRicercaPrestiti";
             this.Text = "Prestiti";
-            this.Load += new System.EventHandler(this.Prestiti_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_prestiti)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -164,5 +181,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button bt_stampa_prospetto;
         private System.Windows.Forms.DataGridView dgv_prestiti;
+        private System.Windows.Forms.TextBox tb_nome_cliente_ricercato;
+        private System.Windows.Forms.TextBox tb_cognome_cliente_ricercato;
     }
 }

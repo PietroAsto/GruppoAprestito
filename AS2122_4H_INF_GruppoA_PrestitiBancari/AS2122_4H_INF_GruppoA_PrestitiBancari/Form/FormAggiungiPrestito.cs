@@ -49,8 +49,9 @@ namespace AS2122_4H_INF_GruppoA_PrestitiBancari
                 else
                 {
                     // Creo e aggiungo un prestito alla lista dei prestiti
-                    Prestito prestito = new Prestito(ammontare, rata, inizio, fine);
+                    Prestito prestito = new Prestito(cliente, ammontare, rata, inizio, fine);
                     cliente.prestiti.Add(prestito);
+                    b1.prestiti_tot.Add(prestito);
                     MessageBox.Show("Prestito aggiunto correttamente");
                 }
             }

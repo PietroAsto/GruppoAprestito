@@ -23,20 +23,28 @@ namespace AS2122_4H_INF_GruppoA_PrestitiBancari
 
         }
 
-        private void Prestiti_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void btn_ricerca_Click(object sender, EventArgs e)
         {
             string cf_cliente = tb_cf.Text;
+
+            if (tb_cf.Text == "")
+            {
+                tb_cf.Text = "Tutti";
+                tb_nome_cliente_ricercato.Text = "Tutti";
+                tb_cognome_cliente_ricercato.Text = "Tutti";
+
+                dgv_prestiti.DataSource = b1.prestiti_tot;
+            }
 
             foreach (Cliente c in b1.clienti)
             {
                 if (c.CodiceFiscale == cf_cliente)
                 {
+                    tb_nome_cliente_ricercato.Text = c.Nome;
+                    tb_cognome_cliente_ricercato.Text = c.Cognome;
+
                     dgv_prestiti.DataSource = c.prestiti;
+                    dgv_prestiti.Columns.Remove("Intestatario");
 
                     // Salvo il cliente ricercato
                     cliente_ricercato = c;
@@ -91,6 +99,5 @@ namespace AS2122_4H_INF_GruppoA_PrestitiBancari
         {
 
         }
-
     }
 }
