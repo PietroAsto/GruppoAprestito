@@ -36,9 +36,24 @@ namespace AS2122_4H_INF_GruppoA_PrestitiBancari
             DateTime inizio = dtp_inizio.Value;
             DateTime fine = dtp_fine.Value;
 
-            // Creo e aggiungo un prestito alla lista dei prestiti
-            Prestito prestito = new Prestito(ammontare, rata, inizio, fine);
-            cliente.prestiti.Add(prestito);
+            if (rata > ammontare)
+            {
+                MessageBox.Show("La rata non può essere più alta dell'ammontare! Riprova");
+            }
+            else
+            {
+                if (inizio > fine)
+                {
+                    MessageBox.Show("La data di inizio non può essere successiva a quella di fine! Riprova");
+                }
+                else
+                {
+                    // Creo e aggiungo un prestito alla lista dei prestiti
+                    Prestito prestito = new Prestito(ammontare, rata, inizio, fine);
+                    cliente.prestiti.Add(prestito);
+                    MessageBox.Show("Prestito aggiunto correttamente");
+                }
+            }
 
             // Ripristino i valori del prestito quando si aggiunge un prestito
             nud_ammontare.Value = 0;
@@ -46,7 +61,6 @@ namespace AS2122_4H_INF_GruppoA_PrestitiBancari
             dtp_inizio.Value = DateTime.Today;
             dtp_fine.Value = DateTime.Today;
 
-            MessageBox.Show("Prestito aggiunto correttamente");
             
         }
 
