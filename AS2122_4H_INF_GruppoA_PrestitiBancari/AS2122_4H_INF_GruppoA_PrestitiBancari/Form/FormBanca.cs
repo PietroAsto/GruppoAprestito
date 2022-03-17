@@ -17,13 +17,6 @@ namespace AS2122_4H_INF_GruppoA_PrestitiBancari
         internal Banca banca = new Banca("Arabab Ashabeb");
         internal Banca Banca { get { return banca; } }
         
-        internal Prestito prestito;
-
-        //internal Prestito Prestito { get { return Prestito} }
-
-
-
-        
         public Menu()
         {
             InitializeComponent();
@@ -56,7 +49,7 @@ namespace AS2122_4H_INF_GruppoA_PrestitiBancari
 
         private void Ricerca_Prestiti_Click(object sender, EventArgs e)
         {
-            FormRicercaPrestiti ricerca_prestiti = new FormRicercaPrestiti(Banca, prestito);
+            FormRicercaPrestiti ricerca_prestiti = new FormRicercaPrestiti(Banca);
             ricerca_prestiti.Show();
         }
 

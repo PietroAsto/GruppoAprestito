@@ -15,13 +15,12 @@ namespace AS2122_4H_INF_GruppoA_PrestitiBancari
     public partial class FormRicercaPrestiti : Form
     {
         Banca b1;
-        Prestito p1;
+
         Cliente cliente_ricercato;
-        public FormRicercaPrestiti(Banca b, Prestito p)
+        public FormRicercaPrestiti(Banca b)
         {
             InitializeComponent();
             b1 = b;
-            p1 = p;
         }
 
         private void btn_ricerca_Click(object sender, EventArgs e)
@@ -91,6 +90,29 @@ namespace AS2122_4H_INF_GruppoA_PrestitiBancari
                 foreach (Prestito p in cliente_ricercato.prestiti)
                 {
                     string nuova_linea = $"{p.AmmontarePrestito};{p.Rata};{p.InizioPrestito.ToString("dd.MM.yyyy")};{p.FinePrestito.ToString("dd.MM.yyyy")}";
+                    csv.AppendLine(nuova_linea);
+                }
+
+                // Scrivo il file
+                File.WriteAllText(file, csv.ToString());
+            }
+            else
+            {
+                // Calcolo il nome del file
+                string nome_file = "\\Prospetto_Prestiti_Banca" + "_" + DateTime.Now.ToString("dd.MM.yyyy") + ".csv";
+
+                // Compongo il percorso assoluto del file
+                string file = percorso_dekstop + nome_file;
+
+                // Lo StringBuilder ci aiuta a comporre il csv e ad occuparsi degli a capo
+                var csv = new StringBuilder();
+
+                // Definisco e aggiungo manualmente i nomi delle colonne
+                csv.AppendLine("Ammontare;Rata;DataInizio;DataFine;Intestatario");
+
+                foreach (Prestito p in b1.prestiti_tot)
+                {
+                    string nuova_linea = $"{p.AmmontarePrestito};{p.Rata};{p.InizioPrestito.ToString("dd.MM.yyyy")};{p.FinePrestito.ToString("dd.MM.yyyy")};{p.NomeCognome}";
                     csv.AppendLine(nuova_linea);
                 }
 
