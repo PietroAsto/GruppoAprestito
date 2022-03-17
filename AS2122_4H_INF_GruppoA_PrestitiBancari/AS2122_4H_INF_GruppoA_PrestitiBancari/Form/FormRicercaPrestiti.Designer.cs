@@ -39,6 +39,8 @@
             this.dgv_prestiti = new System.Windows.Forms.DataGridView();
             this.tb_nome_cliente_ricercato = new System.Windows.Forms.TextBox();
             this.tb_cognome_cliente_ricercato = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_prestiti)).BeginInit();
             this.SuspendLayout();
             // 
@@ -57,10 +59,10 @@
             // btn_ricerca
             // 
             this.btn_ricerca.Font = new System.Drawing.Font("Georgia", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_ricerca.Location = new System.Drawing.Point(195, 60);
+            this.btn_ricerca.Location = new System.Drawing.Point(383, 45);
             this.btn_ricerca.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_ricerca.Name = "btn_ricerca";
-            this.btn_ricerca.Size = new System.Drawing.Size(98, 29);
+            this.btn_ricerca.Size = new System.Drawing.Size(98, 28);
             this.btn_ricerca.TabIndex = 1;
             this.btn_ricerca.Text = "Ricerca";
             this.btn_ricerca.UseVisualStyleBackColor = true;
@@ -134,17 +136,41 @@
             // 
             // tb_nome_cliente_ricercato
             // 
-            this.tb_nome_cliente_ricercato.Location = new System.Drawing.Point(417, 18);
+            this.tb_nome_cliente_ricercato.Location = new System.Drawing.Point(162, 45);
             this.tb_nome_cliente_ricercato.Name = "tb_nome_cliente_ricercato";
-            this.tb_nome_cliente_ricercato.Size = new System.Drawing.Size(141, 22);
+            this.tb_nome_cliente_ricercato.Size = new System.Drawing.Size(168, 22);
             this.tb_nome_cliente_ricercato.TabIndex = 10;
             // 
             // tb_cognome_cliente_ricercato
             // 
-            this.tb_cognome_cliente_ricercato.Location = new System.Drawing.Point(628, 18);
+            this.tb_cognome_cliente_ricercato.Location = new System.Drawing.Point(162, 73);
             this.tb_cognome_cliente_ricercato.Name = "tb_cognome_cliente_ricercato";
-            this.tb_cognome_cliente_ricercato.Size = new System.Drawing.Size(141, 22);
+            this.tb_cognome_cliente_ricercato.Size = new System.Drawing.Size(168, 22);
             this.tb_cognome_cliente_ricercato.TabIndex = 11;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Georgia", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(35, 45);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(54, 20);
+            this.label4.TabIndex = 12;
+            this.label4.Text = "Nome";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Georgia", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(35, 73);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(81, 20);
+            this.label5.TabIndex = 13;
+            this.label5.Text = "Cognome";
             // 
             // FormRicercaPrestiti
             // 
@@ -152,6 +178,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.tb_cognome_cliente_ricercato);
             this.Controls.Add(this.tb_nome_cliente_ricercato);
             this.Controls.Add(this.dgv_prestiti);
@@ -184,5 +212,7 @@
         private System.Windows.Forms.DataGridView dgv_prestiti;
         private System.Windows.Forms.TextBox tb_nome_cliente_ricercato;
         private System.Windows.Forms.TextBox tb_cognome_cliente_ricercato;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
     }
 }

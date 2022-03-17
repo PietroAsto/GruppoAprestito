@@ -41,10 +41,10 @@
             // 
             // Aggiungi_Cliente
             // 
-            this.Aggiungi_Cliente.Location = new System.Drawing.Point(24, 18);
-            this.Aggiungi_Cliente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Aggiungi_Cliente.Location = new System.Drawing.Point(32, 22);
+            this.Aggiungi_Cliente.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Aggiungi_Cliente.Name = "Aggiungi_Cliente";
-            this.Aggiungi_Cliente.Size = new System.Drawing.Size(113, 34);
+            this.Aggiungi_Cliente.Size = new System.Drawing.Size(151, 42);
             this.Aggiungi_Cliente.TabIndex = 0;
             this.Aggiungi_Cliente.Text = "Aggiungi Cliente ";
             this.Aggiungi_Cliente.UseVisualStyleBackColor = true;
@@ -52,10 +52,10 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(24, 56);
-            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button3.Location = new System.Drawing.Point(32, 69);
+            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(113, 36);
+            this.button3.Size = new System.Drawing.Size(151, 44);
             this.button3.TabIndex = 2;
             this.button3.Text = "Modifica Cliente";
             this.button3.UseVisualStyleBackColor = true;
@@ -67,14 +67,13 @@
             this.prestiti.FlatAppearance.BorderSize = 2;
             this.prestiti.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.prestiti.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.prestiti.Location = new System.Drawing.Point(24, 60);
-            this.prestiti.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.prestiti.Location = new System.Drawing.Point(32, 74);
+            this.prestiti.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.prestiti.Name = "prestiti";
-            this.prestiti.Size = new System.Drawing.Size(113, 36);
+            this.prestiti.Size = new System.Drawing.Size(151, 44);
             this.prestiti.TabIndex = 4;
             this.prestiti.Text = "Ricerca Prestiti";
             this.prestiti.UseVisualStyleBackColor = true;
-            this.prestiti.UseWaitCursor = true;
             this.prestiti.Click += new System.EventHandler(this.Ricerca_Prestiti_Click);
             // 
             // groupBox1
@@ -82,17 +81,17 @@
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.prestiti);
             this.groupBox1.Controls.Add(this.AggiungiPrestito);
-            this.groupBox1.Font = new System.Drawing.Font("Georgia Pro Cond", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Cursor = System.Windows.Forms.Cursors.Cross;
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.Black;
-            this.groupBox1.Location = new System.Drawing.Point(111, 185);
+            this.groupBox1.Location = new System.Drawing.Point(148, 228);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(0);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(0);
-            this.groupBox1.Size = new System.Drawing.Size(165, 100);
+            this.groupBox1.Size = new System.Drawing.Size(220, 123);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "               PRESTITI";
-            this.groupBox1.UseWaitCursor = true;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // AggiungiPrestito
@@ -101,14 +100,13 @@
             this.AggiungiPrestito.FlatAppearance.BorderSize = 2;
             this.AggiungiPrestito.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.AggiungiPrestito.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.AggiungiPrestito.Location = new System.Drawing.Point(24, 19);
-            this.AggiungiPrestito.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.AggiungiPrestito.Location = new System.Drawing.Point(32, 23);
+            this.AggiungiPrestito.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.AggiungiPrestito.Name = "AggiungiPrestito";
-            this.AggiungiPrestito.Size = new System.Drawing.Size(113, 34);
+            this.AggiungiPrestito.Size = new System.Drawing.Size(151, 42);
             this.AggiungiPrestito.TabIndex = 7;
             this.AggiungiPrestito.Text = "Aggiungi Prestito";
             this.AggiungiPrestito.UseVisualStyleBackColor = true;
-            this.AggiungiPrestito.UseWaitCursor = true;
             this.AggiungiPrestito.Click += new System.EventHandler(this.AggiungiPrestito_Click);
             // 
             // groupBox2
@@ -120,13 +118,13 @@
             this.groupBox2.Controls.Add(this.Aggiungi_Cliente);
             this.groupBox2.Controls.Add(this.button3);
             this.groupBox2.Cursor = System.Windows.Forms.Cursors.Cross;
-            this.groupBox2.Font = new System.Drawing.Font("Georgia Pro Cond", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.groupBox2.Location = new System.Drawing.Point(111, 54);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Location = new System.Drawing.Point(148, 66);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBox2.Size = new System.Drawing.Size(165, 106);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox2.Size = new System.Drawing.Size(220, 130);
             this.groupBox2.TabIndex = 7;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "                CLIENTI";
@@ -134,14 +132,15 @@
             // 
             // Menu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(401, 366);
+            this.ClientSize = new System.Drawing.Size(535, 450);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Cursor = System.Windows.Forms.Cursors.Cross;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Menu";
             this.Text = "Menù";
             this.Load += new System.EventHandler(this.Menu_Load);
