@@ -26,8 +26,9 @@ namespace AS2122_4H_INF_GruppoA_PrestitiBancari
         private void btn_ricerca_Click(object sender, EventArgs e)
         {
             string cf_cliente = tb_cf.Text;
+            string cognome_cliente = tb_cognome_cliente_ricercato.Text;
 
-            if (tb_cf.Text == "")
+            if (tb_cf.Text == "Arabab Ashabeb")
             {
                 tb_cf.Text = "Tutti";
                 tb_nome_cliente_ricercato.Text = "Tutti";
@@ -36,6 +37,32 @@ namespace AS2122_4H_INF_GruppoA_PrestitiBancari
                 dgv_prestiti.DataSource = b1.prestiti_tot;
                 dgv_prestiti.Columns[4].DataPropertyName = "NomeCognome";
                 dgv_prestiti.Columns.Remove("NomeCognome");
+            }
+
+            foreach (Cliente c in b1.clienti)
+            {
+                if (c.Cognome == cognome_cliente)
+                {
+                    tb_cf.Text = c.CodiceFiscale;
+                    tb_nome_cliente_ricercato.Text = c.Nome;
+                    dgv_prestiti.DataSource = c.prestiti;
+
+                    dgv_prestiti.Columns.Remove("Intestatario");
+                    dgv_prestiti.Columns.Remove("NomeCognome");
+
+                    cliente_ricercato = c;
+
+                    dgv_prestiti.Columns[2].DefaultCellStyle.Format = "dd/MM/yyyy";
+                    dgv_prestiti.Columns[3].DefaultCellStyle.Format = "dd/MM/yyyy";
+
+                    // Metodo per calcolare l'ammontare totale
+                    double a_p = 0;
+                    for (int i = 0; i < c.prestiti.Count; i++)
+                    {
+                        a_p += c.prestiti[i].AmmontarePrestito;
+                    }
+                    tb_amm_tot.Text = a_p.ToString();
+                }
             }
 
             foreach (Cliente c in b1.clienti)
@@ -119,14 +146,5 @@ namespace AS2122_4H_INF_GruppoA_PrestitiBancari
                 File.WriteAllText(file, csv.ToString());
             }
         }
-        private void FormRicercaPrestiti_Load(object sender, EventArgs e)
-        {
-        }
-
-        private void dgv_prestiti_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
     }
 }

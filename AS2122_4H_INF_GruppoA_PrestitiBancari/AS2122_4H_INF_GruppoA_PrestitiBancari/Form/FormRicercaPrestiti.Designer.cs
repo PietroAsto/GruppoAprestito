@@ -110,7 +110,7 @@
             // bt_stampa_prospetto
             // 
             this.bt_stampa_prospetto.Font = new System.Drawing.Font("Georgia", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_stampa_prospetto.Location = new System.Drawing.Point(40, 317);
+            this.bt_stampa_prospetto.Location = new System.Drawing.Point(39, 317);
             this.bt_stampa_prospetto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bt_stampa_prospetto.Name = "bt_stampa_prospetto";
             this.bt_stampa_prospetto.Size = new System.Drawing.Size(196, 32);
@@ -132,18 +132,17 @@
             this.dgv_prestiti.RowTemplate.Height = 24;
             this.dgv_prestiti.Size = new System.Drawing.Size(606, 150);
             this.dgv_prestiti.TabIndex = 9;
-            this.dgv_prestiti.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_prestiti_CellContentClick);
             // 
             // tb_nome_cliente_ricercato
             // 
-            this.tb_nome_cliente_ricercato.Location = new System.Drawing.Point(162, 45);
+            this.tb_nome_cliente_ricercato.Location = new System.Drawing.Point(162, 71);
             this.tb_nome_cliente_ricercato.Name = "tb_nome_cliente_ricercato";
             this.tb_nome_cliente_ricercato.Size = new System.Drawing.Size(168, 22);
             this.tb_nome_cliente_ricercato.TabIndex = 10;
             // 
             // tb_cognome_cliente_ricercato
             // 
-            this.tb_cognome_cliente_ricercato.Location = new System.Drawing.Point(162, 73);
+            this.tb_cognome_cliente_ricercato.Location = new System.Drawing.Point(162, 45);
             this.tb_cognome_cliente_ricercato.Name = "tb_cognome_cliente_ricercato";
             this.tb_cognome_cliente_ricercato.Size = new System.Drawing.Size(168, 22);
             this.tb_cognome_cliente_ricercato.TabIndex = 11;
@@ -154,7 +153,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Georgia", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(35, 45);
+            this.label4.Location = new System.Drawing.Point(35, 73);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(54, 20);
             this.label4.TabIndex = 12;
@@ -166,7 +165,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Georgia", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(35, 73);
+            this.label5.Location = new System.Drawing.Point(36, 49);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(81, 20);
             this.label5.TabIndex = 13;
@@ -193,7 +192,6 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormRicercaPrestiti";
             this.Text = "Prestiti";
-            this.Load += new System.EventHandler(this.FormRicercaPrestiti_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_prestiti)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
