@@ -41,6 +41,7 @@
             this.tb_cognome_cliente_ricercato = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.bt_svuota = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_prestiti)).BeginInit();
             this.SuspendLayout();
             // 
@@ -59,7 +60,7 @@
             // btn_ricerca
             // 
             this.btn_ricerca.Font = new System.Drawing.Font("Georgia", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_ricerca.Location = new System.Drawing.Point(383, 45);
+            this.btn_ricerca.Location = new System.Drawing.Point(379, 22);
             this.btn_ricerca.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_ricerca.Name = "btn_ricerca";
             this.btn_ricerca.Size = new System.Drawing.Size(98, 28);
@@ -171,12 +172,24 @@
             this.label5.TabIndex = 13;
             this.label5.Text = "Cognome";
             // 
+            // bt_svuota
+            // 
+            this.bt_svuota.Font = new System.Drawing.Font("Georgia", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_svuota.Location = new System.Drawing.Point(379, 65);
+            this.bt_svuota.Name = "bt_svuota";
+            this.bt_svuota.Size = new System.Drawing.Size(98, 28);
+            this.bt_svuota.TabIndex = 14;
+            this.bt_svuota.Text = "Svuota";
+            this.bt_svuota.UseVisualStyleBackColor = true;
+            this.bt_svuota.Click += new System.EventHandler(this.bt_svuota_Click);
+            // 
             // FormRicercaPrestiti
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.bt_svuota);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.tb_cognome_cliente_ricercato);
@@ -212,5 +225,6 @@
         private System.Windows.Forms.TextBox tb_cognome_cliente_ricercato;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button bt_svuota;
     }
 }
