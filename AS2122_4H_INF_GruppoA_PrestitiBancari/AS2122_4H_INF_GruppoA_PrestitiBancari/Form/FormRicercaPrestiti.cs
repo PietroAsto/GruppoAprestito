@@ -30,7 +30,7 @@ namespace AS2122_4H_INF_GruppoA_PrestitiBancari
             string nome_cliente = tb_nome_cliente_ricercato.Text;
             bool trovato = false;
 
-            if (tb_cf.Text == "Arabab Ashabeb")
+            if (tb_nome_cliente_ricercato.Text == "Arabab Ashabeb")
             {
                 tb_cf.Text = "Tutti";
                 tb_nome_cliente_ricercato.Text = "Tutti";
