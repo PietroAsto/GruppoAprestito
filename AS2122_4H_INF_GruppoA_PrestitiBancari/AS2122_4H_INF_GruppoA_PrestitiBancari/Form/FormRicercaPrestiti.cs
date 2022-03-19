@@ -28,6 +28,7 @@ namespace AS2122_4H_INF_GruppoA_PrestitiBancari
             string cf_cliente = tb_cf.Text;
             string cognome_cliente = tb_cognome_cliente_ricercato.Text;
             string nome_cliente = tb_nome_cliente_ricercato.Text;
+            bool trovato = false;
 
             if (tb_cf.Text == "Arabab Ashabeb")
             {
@@ -38,6 +39,7 @@ namespace AS2122_4H_INF_GruppoA_PrestitiBancari
                 dgv_prestiti.DataSource = b1.prestiti_tot;
                 dgv_prestiti.Columns[4].DataPropertyName = "NomeCognome";
                 dgv_prestiti.Columns.Remove("NomeCognome");
+                trovato = true;
             }
 
             foreach (Cliente c in b1.clienti)
@@ -47,12 +49,15 @@ namespace AS2122_4H_INF_GruppoA_PrestitiBancari
                     tb_nome_cliente_ricercato.Text = c.Nome;
                     tb_cognome_cliente_ricercato.Text = c.Cognome;
 
+                    dgv_prestiti.DataSource = null;
                     dgv_prestiti.DataSource = c.prestiti;
                     dgv_prestiti.Columns.Remove("Intestatario");
                     dgv_prestiti.Columns.Remove("NomeCognome");
 
                     // Salvo il cliente ricercato
                     cliente_ricercato = c;
+
+                    trovato = true;
 
                     // Levo l'orario, fondamentalmente perchè non serve
                     dgv_prestiti.Columns[2].DefaultCellStyle.Format = "dd/MM/yyyy";
@@ -74,12 +79,15 @@ namespace AS2122_4H_INF_GruppoA_PrestitiBancari
                 {
                     tb_cf.Text = c.CodiceFiscale;
                     tb_nome_cliente_ricercato.Text = c.Nome;
+                    
+                    dgv_prestiti.DataSource = null;
                     dgv_prestiti.DataSource = c.prestiti;
-
                     dgv_prestiti.Columns.Remove("Intestatario");
                     dgv_prestiti.Columns.Remove("NomeCognome");
 
                     cliente_ricercato = c;
+
+                    trovato = true;
 
                     dgv_prestiti.Columns[2].DefaultCellStyle.Format = "dd/MM/yyyy";
                     dgv_prestiti.Columns[3].DefaultCellStyle.Format = "dd/MM/yyyy";
@@ -100,12 +108,15 @@ namespace AS2122_4H_INF_GruppoA_PrestitiBancari
                 {
                     tb_cf.Text = c.CodiceFiscale;
                     tb_cognome_cliente_ricercato.Text = c.Cognome;
+                    
+                    dgv_prestiti.DataSource = null;
                     dgv_prestiti.DataSource = c.prestiti;
-
                     dgv_prestiti.Columns.Remove("Intestatario");
                     dgv_prestiti.Columns.Remove("NomeCognome");
 
                     cliente_ricercato = c;
+
+                    trovato = true;
 
                     dgv_prestiti.Columns[2].DefaultCellStyle.Format = "dd/MM/yyyy";
                     dgv_prestiti.Columns[3].DefaultCellStyle.Format = "dd/MM/yyyy";
@@ -118,6 +129,11 @@ namespace AS2122_4H_INF_GruppoA_PrestitiBancari
                     }
                     tb_amm_tot.Text = a_p.ToString();
                 }
+            }
+
+            if (trovato == false)
+            {
+                MessageBox.Show("Cliente non trovato! Riprova");
             }
 
         }
